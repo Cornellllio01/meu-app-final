@@ -1,0 +1,75 @@
+/* Intro */
+.intro-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.intro-box h1 {
+    color: #00A859;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.intro-box p {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Cards */
+.card-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.card {
+    flex: 1 1 200px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+.card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.card-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: inherit;
+}
+.card-text p {
+    font-size: 0.95rem;
+    margin: 0;
+    color: inherit;
+}
+
+/* Variações de cor */
+.card-criancas { background: #d7f5db; color: #006633; }
+.card-historias { background: #ffe7a3; color: #b37000; }
+.card-brincadeiras { background: #a3d0ff; color: #004c99; }
+.card-animais { background: #ffd6d6; color: #990000; }
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}

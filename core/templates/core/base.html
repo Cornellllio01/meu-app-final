@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Projeto Brasileirinho{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f9f0;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #00A859;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:last-child {
+            margin-right: 0;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #eee;
+            padding: 15px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Início</a>
+            <a href="{% url 'espaco_criancas' %}">Espaço das Crianças</a>
+            <a href="{% url 'historias' %}">Histórias Educativas</a>
+            <a href="{% url 'brincadeiras' %}">Brincadeiras Sustentáveis</a>
+            <a href="{% url 'animais' %}">Animais da Floresta</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        Projeto Brasileirinho © 2025
+    </footer>
+
+</body>
+</html>

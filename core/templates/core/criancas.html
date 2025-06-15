@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Espaço das Crianças | Brasileirinho{% endblock %}
+
+{% block content %}
+<div style="max-width: 800px; margin: auto; background: #fff; border-radius: 20px; padding: 30px; box-shadow: 0 0 20px rgba(0,0,0,0.1); font-family: 'Comic Sans MS', cursive; text-align: center;">
+
+    <!-- Mascote -->
+<img src="{% static 'images/5f5282c5-97a8-4916-bffc-31654f506a4f.png' %}" alt="Mascote Ararinha Azul" style="width: 150px; margin-bottom: 20px;" />
+
+    <h1 style="color: #00A859; font-size: 28px;">🌈✨ Bem-vindo ao Espaço das Crianças! ✨🌈</h1>
+    
+    <p>Esse é um cantinho especial do <strong>Projeto Brasileirinho</strong>, feito com muito carinho para você que é criança e quer aprender, brincar, cuidar da natureza e ajudar a construir um mundo mais bonito!</p>
+
+    <p>Aqui você vai encontrar histórias, curiosidades sobre os animais, brincadeiras sustentáveis e muita coisa legal que vai te ajudar a crescer com alegria e sabedoria! 🌱🦜</p>
+
+    <p><strong>Vamos juntos transformar o mundo, brincando e aprendendo!</strong></p>
+</div>
+{% endblock %}
