@@ -100,3 +100,4 @@ const styles = StyleSheet.create({
   descriptionText: { fontSize: 20, textTransform: 'capitalize', color: '#FFFFFF', opacity: 0.9 },
   detailsText: { fontSize: 16, color: '#FFFFFF', opacity: 0.8 },
 });
+y
