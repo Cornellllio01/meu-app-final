@@ -6,7 +6,7 @@ export default function InventarioScreen() {
   return (
     <View style={styles.container}>
       <WebView
-        source={{ uri: 'https://inventariolep.pythonanywhere.com/' }}
+        source={{ uri: 'https://invetariolepes.pythonanywhere.com/' }}
         style={styles.webview}
       />
     </View>
